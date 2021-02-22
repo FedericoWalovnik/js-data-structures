@@ -15,6 +15,20 @@ class MyArray {
     this.length++;
     return this.data;
   }
+  pop() {
+    const lastItem = this.data[this.length - 1];
+    delete this.data[this.length - 1];
+    this.length--;
+    return lastItem;
+  }
+  delete(index){
+
+  }
+  shiftIndex(index){
+    for(let i = index; i< this.length -1; i++){
+
+    }
+  }
 }
 
 const myArray = new MyArray();
@@ -22,6 +36,6 @@ myArray.push("Juan");
 myArray.push("Adriana");
 myArray.push("Manuel");
 
-myArray.get(1);
+myArray.pop();
 
 console.log(myArray);
